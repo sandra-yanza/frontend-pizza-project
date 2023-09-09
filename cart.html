@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Pizza Spot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="packer">
+        <aside>
+            <header>
+                <img id="logo-image" class="logo-image" src="./images/Logo.png">
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="menu-button back-button" href="./index.html">
+                            <i class="bi bi-arrow-left-circle"></i>Continue Shopping
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-button cart-button active" href="./cart.html">
+                            <i class="bi bi-cart3"></i></i> Shopping Cart
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="footer-text">© 2023 Front End 2 - Final Project</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="main-title">Shopping Cart</h2>
+            <div class="cart-container">
+                <p id="empty-cart" class="empty-cart">Your cart is empty. <i class="bi bi-emoji-frown"></i></p>
+
+                <div id="products-cart" class="products-cart disabled">
+                </div>
+
+                <div id="actions-cart" class="actions-cart disabled">
+                    <div class="actions-cart-left">
+                        <button id="actions-cart-empty" class="actions-cart-empty">Empty cart</button>
+                    </div>
+                    <div class="actions-cart-right">
+                        <div class="actions-cart-total">
+                            <p>Total:</p>
+                            <p id="total">$3000</p>
+                        </div>
+                        <button id="actions-cart-buy" class="actions-cart-buy">Buy now</button>
+                    </div>
+                </div>
+
+                <p id="cart-bought" class="cart-bought disabled">Thank you for shopping. <i class="bi bi-emoji-laughing"></i></p>
+
+            </div>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
